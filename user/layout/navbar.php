@@ -37,10 +37,18 @@ $current_page = basename($_SERVER['PHP_SELF']);
       </ul>
 
       <!------------------------- USERNAME AND PROFILE ----------------------------------------------------------------------------->
-      <div class="d-flex align-items-center">
-        <span class="text-white me-2">Username</span>
-        <div class="bg-light text-dark rounded-circle d-flex justify-content-center align-items-center" style="width:35px; height:35px;">
-          <i class="bi bi-person-fill"></i>
+      <div class="dropdown">
+        <a href="#" class="text-decoration-none" role="button" id="dropdownUser" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <div class="d-flex align-items-center">
+            <span class="text-white me-2">Username</span>
+            <div class="bg-light text-dark rounded-circle d-flex justify-content-center align-items-center" style="width:35px; height:35px;">
+              <i class="bi bi-person-fill"></i>
+            </div>
+          </div>
+        </a>
+        <div class="dropdown-menu py-2 px-2" style="min-width: 100px;" aria-labelledby="dropdownUser">
+          <a class="dropdown-item pb-0" href="#Profile">Profile</a><hr class="my-2">
+          <a class="dropdown-item pt-0" href="../pages/account.php">Accounts</a>
         </div>
       </div>
     </div>
